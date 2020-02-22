@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace AsyncHelper
 {
-	public readonly struct SignalSetter:IDisposable
+	public readonly struct WaitedEvent:IDisposable
 	{
-		public static SignalSetter Empty { get; } = new SignalSetter(default);
+		public static WaitedEvent Empty { get; } = new WaitedEvent(default);
 		readonly AutoResetEvent resetEvent;
 		public bool Signal => resetEvent != default;
-		internal SignalSetter(AutoResetEvent autoResetEvent) =>
+		internal WaitedEvent(AutoResetEvent autoResetEvent) =>
 			resetEvent = autoResetEvent;
 
 		public void Dispose() => resetEvent?.Set();
