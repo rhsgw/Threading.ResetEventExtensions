@@ -1,12 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AsyncHelper;
+using Threading.ResetEventExtensions;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AsyncHelper.Tests
+namespace Threading.ResetEventExtensions.Tests
 {
 	[TestClass()]
 	public class AutoResetEventExtensionsTests
