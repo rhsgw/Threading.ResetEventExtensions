@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AsyncHelper.Tests
+namespace Threading.ResetEventExtensions.Tests
 {
 	[TestClass()]
 	public class AutoResetEventExtensionsTests

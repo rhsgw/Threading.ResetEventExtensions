@@ -7,7 +7,7 @@
     <Copyright>(C) 2020 rhsgw</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>rhsgw.MyAsyncHelper</PackageId>
+    <PackageId>rhsgw.Threading.ResetEventExtensions</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AsyncHelper\AsyncHelper.csproj" />
+    <ProjectReference Include="..\Threading.ResetEventExtensions\Threading.ResetEventExtensions.csproj" />
   </ItemGroup>
 
 </Project>
