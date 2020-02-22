@@ -33,5 +33,16 @@ namespace Threading.ResetEventExtensions.Tests
 				Assert.IsTrue(are.WaitOne(0));
 			}
 		}
+		[TestMethod]
+		public async Task DisposedResetEventTest()
+		{
+			var are = new AutoResetEvent(false);
+			are.Dispose();
+			await are.WaitOneAsync(150);
+
+			are = new AutoResetEvent(true);
+			using(var waited = await are.WaitOneAsync(0))
+				are.Dispose();
+		}
 	}
 }
