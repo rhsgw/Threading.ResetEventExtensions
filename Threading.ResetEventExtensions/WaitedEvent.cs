@@ -14,6 +14,11 @@ namespace Threading.ResetEventExtensions
 		internal WaitedEvent(AutoResetEvent autoResetEvent) =>
 			resetEvent = autoResetEvent;
 
-		public void Dispose() => resetEvent?.Set();
+		public void Dispose()
+		{
+			if(resetEvent == null) return;
+			try { resetEvent.Set(); }
+			catch { }
+		}
 	}
 }
