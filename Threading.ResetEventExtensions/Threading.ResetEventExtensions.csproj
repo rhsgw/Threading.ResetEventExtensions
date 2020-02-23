@@ -7,7 +7,10 @@
     <Copyright>(C) 2020 rhsgw</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>rhsgw.MyAsyncHelper</PackageId>
+    <PackageId>rhsgw.Threading.ResetEventExtensions</PackageId>
+    <PackageProjectUrl>https://github.com/rhsgw/Threading.ResetEventExtensions</PackageProjectUrl>
+    <PackageTags>AutoResetEvent WaitOneAsync IDisposable</PackageTags>
+    <Description>Library for AutoResetEvent to call WaitOne asynchronously</Description>
   </PropertyGroup>
 
   <ItemGroup>
