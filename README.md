@@ -13,6 +13,9 @@ AutoResetEvent.WaitOne を非同期に実行するためのライブラリ。
 3. スレッド間で共有するAutoResetEventを用意しておく
 4. 次のような感じで使用する
 ```
+
+AutoResetEvent autoResetEvent = new(true); // スレッド間で共有するAutoResetEvent (必ずset状態で始める)
+
 using(var waited = await autoResetEvent.WaitOneAsync(5000)) // タイムアウト5000ms
 {
   if(!waited.Signal) return; // タイムアウト
